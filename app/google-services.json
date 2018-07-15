@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "228298529098",
+    "firebase_url": "https://pesona-lebak10.firebaseio.com",
+    "project_id": "pesona-lebak10",
+    "storage_bucket": "pesona-lebak10.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:228298529098:android:ddbd2b85229a9a9d",
+        "android_client_info": {
+          "package_name": "id.sitirohtiani.pesonalebak"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "228298529098-cfqrl2hgmh00tg6rnnq7kvqll4pi10tv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "id.sitirohtiani.pesonalebak",
+            "certificate_hash": "85782db0c1413cf4b9dc3eb87c8dec7e8b160871"
+          }
+        },
+        {
+          "client_id": "228298529098-h7msrtvt4lnantrcbetivv4hjmpah70l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2LfpO1VKpYymCIJbxyFD6MRHT5-2timA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "228298529098-h7msrtvt4lnantrcbetivv4hjmpah70l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
