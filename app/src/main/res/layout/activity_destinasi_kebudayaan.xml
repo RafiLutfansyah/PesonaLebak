@@ -4,14 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
+    android:background="@color/colorPrimary"
     tools:context="id.sitirohtiani.pesonalebak.views.main.MainActivity">
-    
+
     <android.support.constraint.Guideline
         android:id="@+id/guideline1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.5"/>
+        app:layout_constraintGuide_percent="0.5" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline2"
@@ -20,8 +22,9 @@
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.5" />
 
-    <Button
-        android:id="@+id/buttonASukuAdat"
+    <ImageButton
+        android:id="@+id/buttonSukuAdat"
+        style="@style/Widget.AppCompat.Button"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="4dp"
@@ -30,14 +33,17 @@
         android:layout_marginRight="4dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="Suku Adat"
+        android:background="@color/colorAccent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/masyarakat_adat"
         app:layout_constraintBottom_toTopOf="@+id/guideline1"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
+    <ImageButton
         android:id="@+id/buttonKesenian"
+        style="@style/Widget.AppCompat.Button"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="4dp"
@@ -46,14 +52,17 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="8dp"
-        android:text="Kesenian"
+        android:background="@color/colorAccent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/kesenian"
         app:layout_constraintBottom_toTopOf="@+id/guideline1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
+    <ImageButton
         android:id="@+id/buttonSitusPurbakala"
+        style="@style/Widget.AppCompat.Button"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="8dp"
@@ -62,7 +71,9 @@
         android:layout_marginRight="4dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="4dp"
-        android:text="Situs Purbakala"
+        android:background="@color/colorAccent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/situs_purbakala"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="parent"

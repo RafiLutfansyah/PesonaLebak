@@ -4,28 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     tools:context="id.sitirohtiani.pesonalebak.views.main.MainActivity">
 
-    <com.synnapps.carouselview.CarouselView
-        android:id="@+id/carouselView"
+    <com.glide.slider.library.SliderLayout
+        android:id="@+id/slider"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        app:fillColor="#FFFFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:pageColor="#00000000"
-        app:radius="6dp"
-        app:slideInterval="3000"
-        app:strokeColor="#FF777777"
-        app:strokeWidth="1dp" />
-
-    <android.support.constraint.Guideline
-        android:id="@+id/guideline1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.33" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline3"
@@ -33,13 +21,6 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.5" />
-
-    <android.support.constraint.Guideline
-        android:id="@+id/guideline2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.67" />
 
     <Space
         android:id="@+id/space"
@@ -54,10 +35,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/carouselView" />
+        app:layout_constraintTop_toBottomOf="@+id/slider" />
 
-    <Button
-        android:id="@+id/buttonParawisata"
+    <ImageView
+        android:id="@+id/buttonPariwisata"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="4dp"
@@ -66,66 +47,59 @@
         android:layout_marginRight="4dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="Parawisata"
+        android:scaleType="centerInside"
+        android:src="@drawable/button_parawisata"
         app:layout_constraintBottom_toTopOf="@+id/space"
-        app:layout_constraintEnd_toStartOf="@+id/guideline1"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/carouselView" />
+        app:layout_constraintTop_toBottomOf="@+id/slider" />
 
-    <Button
+    <ImageView
         android:id="@+id/buttonKebudayaan"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="4dp"
-        android:layout_marginEnd="4dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginLeft="4dp"
-        android:layout_marginRight="4dp"
+        android:layout_marginRight="8dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="8dp"
-        android:text="Kebudayaan"
-        app:layout_constraintBottom_toTopOf="@+id/space"
-        app:layout_constraintEnd_toStartOf="@+id/guideline2"
-        app:layout_constraintStart_toEndOf="@+id/buttonParawisata"
-        app:layout_constraintTop_toBottomOf="@+id/carouselView" />
-
-    <Button
-        android:id="@+id/buttonBahasa"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="4dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="Bahasa"
+        android:src="@drawable/button_kebudayaan"
         app:layout_constraintBottom_toTopOf="@+id/space"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/carouselView" />
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/slider"
+        app:layout_constraintVertical_bias="0.0" />
 
-    <Button
+    <ImageView
         android:id="@+id/buttonTentang"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="4dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_marginRight="4dp"
         android:layout_marginStart="8dp"
-        android:text="Tentang Aplikasi"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/button_tentang"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/space" />
 
-    <Button
+    <ImageView
         android:id="@+id/buttonLogout"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
+        android:layout_marginLeft="4dp"
         android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"/>
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/button_logout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/space" />
 </android.support.constraint.ConstraintLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.TentangActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            style="@style/Base.TextAppearance.AppCompat.Large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Aplikasi Pariwisata dan Kebudayaan Kabupaten Lebak"
+            android:textAlignment="center" />
+
+        <TextView
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Oleh"
+            android:textAlignment="center" />
+
+        <TextView
+            style="@style/Base.TextAppearance.AppCompat.Large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Siti Rohtiani"
+            android:textAlignment="center" />
+
+        <TextView
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Aplikasi ini dibuat untuk mendukung Program Pengembangan Pariwisata yang memiliki visi mewujudkan kebudayaan dan pariwisata yang berdaya bersaing dan berkelanjutan."
+            android:textAlignment="center" />
+
+        <TextView
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Untuk dapat mewujudkan visi tersebut, Dinas kebudayaan dan pariwisata memiliki 5 misi utama, yaitu :"
+            android:textAlignment="center" />
+
+        <TextView
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="1. Meningkatkan kapasitas kelembagaan dinas kebudayaan dan pariwisata\n2.	Melestarikan nilai, keragaman dan kekayaan budaya\n3. Mengembangkan pemasaran kebudayaan dan pariwisata\n4. Mengembangkan destinasi pariwisata yang berdaya saing; dan\n5. Meningkatkan Sumber Daya Manusia (SDM) dan kelembagaan kebudayaan &amp; pariwisata yang professional." />
+    </LinearLayout>
+</ScrollView>

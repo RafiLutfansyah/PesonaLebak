@@ -21,7 +21,7 @@ class SplashActivity : AwesomeSplash() {
         /* you don't have to override every property */
 
         //Customize Circular Reveal
-        configSplash.backgroundColor = R.color.colorPrimary //any color you want form colors.xml
+        configSplash.backgroundColor = R.color.colorAccent //any color you want form colors.xml
         configSplash.animCircularRevealDuration = 300 //int ms
         configSplash.revealFlagX = Flags.REVEAL_RIGHT  //or Flags.REVEAL_LEFT
         configSplash.revealFlagY = Flags.REVEAL_BOTTOM //or Flags.REVEAL_TOP
@@ -29,7 +29,7 @@ class SplashActivity : AwesomeSplash() {
         //Choose LOGO OR PATH; if you don't provide String value for path it's logo by default
 
         //Customize Logo
-        configSplash.logoSplash = R.mipmap.ic_launcher //or any other drawable
+        configSplash.logoSplash = R.drawable.logo_pl //or any other drawable
         configSplash.animLogoSplashDuration = 300 //int ms
         configSplash.animLogoSplashTechnique = Techniques.Bounce //choose one form Techniques (ref: https://github.com/daimajia/AndroidViewAnimations)
 
@@ -46,7 +46,7 @@ class SplashActivity : AwesomeSplash() {
         */
 
         //Customize Title
-        configSplash.titleSplash = "Kejar Kampus"
+        configSplash.titleSplash = "Pesona Lebak"
         configSplash.titleTextColor = R.color.colorPrimary
         configSplash.titleTextSize = 30f //float value
         configSplash.animTitleDuration = 300

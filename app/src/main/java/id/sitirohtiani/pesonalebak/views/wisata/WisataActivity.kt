@@ -1,14 +1,14 @@
-package id.sitirohtiani.pesonalebak.views.objek
+package id.sitirohtiani.pesonalebak.views.wisata
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import id.sitirohtiani.pesonalebak.R
-import id.sitirohtiani.pesonalebak.base.ObjekView
-import id.sitirohtiani.pesonalebak.views.main.ObjekPresenter
+import id.sitirohtiani.pesonalebak.base.WisataView
+import id.sitirohtiani.pesonalebak.views.main.WisataPresenter
 import kotlinx.android.synthetic.main.activity_objek.*
 
-class ObjekActivity : AppCompatActivity(), ObjekView {
-    var presenter: ObjekPresenter? = null
+class WisataActivity : AppCompatActivity(), WisataView {
+    var presenter: WisataPresenter? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,7 +21,7 @@ class ObjekActivity : AppCompatActivity(), ObjekView {
     }
 
     private fun initPresenter() {
-        presenter = ObjekPresenter(this)
+        presenter = WisataPresenter(this)
     }
 
     override fun onAttachView() {
